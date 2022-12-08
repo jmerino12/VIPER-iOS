@@ -2,7 +2,7 @@
 //  Post.swift
 //  Viper
 //
-//  Created by Jonathan Eduardo Meriño Bolívar - Ceiba Software on 6/12/22.
+//  Created by Jonathan Eduardo Meriño Bolívar - Ceiba Software on 7/12/22.
 //
 
 import Foundation

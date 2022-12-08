@@ -9,27 +9,33 @@
 /* Begin PBXBuildFile section */
 		B4024AA1293F98D5008C0DCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4024AA0293F98D5008C0DCE /* AppDelegate.swift */; };
 		B4024AA3293F98D5008C0DCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4024AA2293F98D5008C0DCE /* SceneDelegate.swift */; };
-		B4024AA5293F98D5008C0DCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4024AA4293F98D5008C0DCE /* ViewController.swift */; };
-		B4024AA8293F98D5008C0DCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4024AA6293F98D5008C0DCE /* Main.storyboard */; };
 		B4024AAA293F98D9008C0DCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4024AA9293F98D9008C0DCE /* Assets.xcassets */; };
 		B4024AAD293F98D9008C0DCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4024AAB293F98D9008C0DCE /* LaunchScreen.storyboard */; };
 		B4024AB6293F991F008C0DCE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B4024AB5293F991F008C0DCE /* Alamofire */; };
-		B4024ABA293F9994008C0DCE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4024AB9293F9994008C0DCE /* Post.swift */; };
-		B4024ABF293F9A7E008C0DCE /* ExternalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4024ABE293F9A7E008C0DCE /* ExternalDataManager.swift */; };
 		B4024AC2293F9ACE008C0DCE /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B4024AC1293F9ACE008C0DCE /* SwiftyJSON */; };
+		B48251B12940E74B0084ED2C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48251B02940E74A0084ED2C /* PostViewController.swift */; };
+		B48251B32940EB7B0084ED2C /* PostProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48251B22940EB7B0084ED2C /* PostProtocol.swift */; };
+		B48251B52940EC0A0084ED2C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48251B42940EC0A0084ED2C /* Post.swift */; };
+		B48251B72940ECED0084ED2C /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48251B62940ECED0084ED2C /* PostPresenter.swift */; };
+		B48251BA2940EE7B0084ED2C /* PostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48251B92940EE7B0084ED2C /* PostInteractor.swift */; };
+		B48251BC2940F2F00084ED2C /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48251BB2940F2F00084ED2C /* ProgressIndicator.swift */; };
+		B48251BE2940F3AA0084ED2C /* PostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48251BD2940F3AA0084ED2C /* PostRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B4024A9D293F98D5008C0DCE /* Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4024AA0293F98D5008C0DCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4024AA2293F98D5008C0DCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B4024AA4293F98D5008C0DCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B4024AA7293F98D5008C0DCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4024AA9293F98D9008C0DCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4024AAC293F98D9008C0DCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4024AAE293F98D9008C0DCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4024AB9293F9994008C0DCE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		B4024ABE293F9A7E008C0DCE /* ExternalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalDataManager.swift; sourceTree = "<group>"; };
+		B48251B02940E74A0084ED2C /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		B48251B22940EB7B0084ED2C /* PostProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProtocol.swift; sourceTree = "<group>"; };
+		B48251B42940EC0A0084ED2C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B48251B62940ECED0084ED2C /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
+		B48251B92940EE7B0084ED2C /* PostInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostInteractor.swift; sourceTree = "<group>"; };
+		B48251BB2940F2F00084ED2C /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
+		B48251BD2940F3AA0084ED2C /* PostRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,57 +70,36 @@
 		B4024A9F293F98D5008C0DCE /* Viper */ = {
 			isa = PBXGroup;
 			children = (
-				B4024ABD293F9A66008C0DCE /* ExternalDataManager */,
-				B4024AB7293F9983008C0DCE /* Home */,
 				B4024AA0293F98D5008C0DCE /* AppDelegate.swift */,
 				B4024AA2293F98D5008C0DCE /* SceneDelegate.swift */,
-				B4024AA4293F98D5008C0DCE /* ViewController.swift */,
+				B48251BB2940F2F00084ED2C /* ProgressIndicator.swift */,
 				B4024AA9293F98D9008C0DCE /* Assets.xcassets */,
 				B4024AAB293F98D9008C0DCE /* LaunchScreen.storyboard */,
 				B4024AAE293F98D9008C0DCE /* Info.plist */,
+				B428C440293FDA8E001851CE /* Post */,
 			);
 			path = Viper;
 			sourceTree = "<group>";
 		};
-		B4024AB7293F9983008C0DCE /* Home */ = {
+		B428C440293FDA8E001851CE /* Post */ = {
 			isa = PBXGroup;
 			children = (
-				B4024AB8293F9989008C0DCE /* Model */,
-				B4024ABB293F99A5008C0DCE /* View */,
-				B4024ABC293F99B4008C0DCE /* Controller */,
+				B48251B82940EE560084ED2C /* Model */,
+				B48251B22940EB7B0084ED2C /* PostProtocol.swift */,
+				B48251B62940ECED0084ED2C /* PostPresenter.swift */,
+				B48251B02940E74A0084ED2C /* PostViewController.swift */,
+				B48251B92940EE7B0084ED2C /* PostInteractor.swift */,
+				B48251BD2940F3AA0084ED2C /* PostRouter.swift */,
 			);
-			path = Home;
+			path = Post;
 			sourceTree = "<group>";
 		};
-		B4024AB8293F9989008C0DCE /* Model */ = {
+		B48251B82940EE560084ED2C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B4024AB9293F9994008C0DCE /* Post.swift */,
+				B48251B42940EC0A0084ED2C /* Post.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		B4024ABB293F99A5008C0DCE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B4024AA6293F98D5008C0DCE /* Main.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B4024ABC293F99B4008C0DCE /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B4024ABD293F9A66008C0DCE /* ExternalDataManager */ = {
-			isa = PBXGroup;
-			children = (
-				B4024ABE293F9A7E008C0DCE /* ExternalDataManager.swift */,
-			);
-			path = ExternalDataManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +170,6 @@
 			files = (
 				B4024AAD293F98D9008C0DCE /* LaunchScreen.storyboard in Resources */,
 				B4024AAA293F98D9008C0DCE /* Assets.xcassets in Resources */,
-				B4024AA8293F98D5008C0DCE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,25 +180,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4024AA5293F98D5008C0DCE /* ViewController.swift in Sources */,
 				B4024AA1293F98D5008C0DCE /* AppDelegate.swift in Sources */,
+				B48251BA2940EE7B0084ED2C /* PostInteractor.swift in Sources */,
+				B48251B32940EB7B0084ED2C /* PostProtocol.swift in Sources */,
+				B48251B72940ECED0084ED2C /* PostPresenter.swift in Sources */,
+				B48251BC2940F2F00084ED2C /* ProgressIndicator.swift in Sources */,
 				B4024AA3293F98D5008C0DCE /* SceneDelegate.swift in Sources */,
-				B4024ABA293F9994008C0DCE /* Post.swift in Sources */,
-				B4024ABF293F9A7E008C0DCE /* ExternalDataManager.swift in Sources */,
+				B48251B12940E74B0084ED2C /* PostViewController.swift in Sources */,
+				B48251BE2940F3AA0084ED2C /* PostRouter.swift in Sources */,
+				B48251B52940EC0A0084ED2C /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B4024AA6293F98D5008C0DCE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B4024AA7293F98D5008C0DCE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B4024AAB293F98D9008C0DCE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -350,8 +330,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Viper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -381,8 +360,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Viper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
