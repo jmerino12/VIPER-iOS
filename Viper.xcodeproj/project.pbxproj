@@ -13,13 +13,27 @@
 		B4024AAD293F98D9008C0DCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4024AAB293F98D9008C0DCE /* LaunchScreen.storyboard */; };
 		B4024AB6293F991F008C0DCE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B4024AB5293F991F008C0DCE /* Alamofire */; };
 		B4024AC2293F9ACE008C0DCE /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B4024AC1293F9ACE008C0DCE /* SwiftyJSON */; };
-		B48251B12940E74B0084ED2C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48251B02940E74A0084ED2C /* PostViewController.swift */; };
+		B48251B12940E74B0084ED2C /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48251B02940E74A0084ED2C /* PostView.swift */; };
 		B48251B32940EB7B0084ED2C /* PostProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48251B22940EB7B0084ED2C /* PostProtocol.swift */; };
 		B48251B52940EC0A0084ED2C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48251B42940EC0A0084ED2C /* Post.swift */; };
 		B48251B72940ECED0084ED2C /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48251B62940ECED0084ED2C /* PostPresenter.swift */; };
 		B48251BA2940EE7B0084ED2C /* PostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48251B92940EE7B0084ED2C /* PostInteractor.swift */; };
 		B48251BC2940F2F00084ED2C /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48251BB2940F2F00084ED2C /* ProgressIndicator.swift */; };
 		B48251BE2940F3AA0084ED2C /* PostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48251BD2940F3AA0084ED2C /* PostRouter.swift */; };
+		B4E78D3329452D1A00B35F46 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E78D2C29452D1A00B35F46 /* HomeViewPresenter.swift */; };
+		B4E78D3429452D1A00B35F46 /* HomeViewLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E78D2D29452D1A00B35F46 /* HomeViewLocalDataManager.swift */; };
+		B4E78D3529452D1A00B35F46 /* HomeViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E78D2E29452D1A00B35F46 /* HomeViewProtocols.swift */; };
+		B4E78D3629452D1A00B35F46 /* HomeViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E78D2F29452D1A00B35F46 /* HomeViewInteractor.swift */; };
+		B4E78D3729452D1A00B35F46 /* HomeViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E78D3029452D1A00B35F46 /* HomeViewView.swift */; };
+		B4E78D3829452D1A00B35F46 /* HomeViewRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E78D3129452D1A00B35F46 /* HomeViewRemoteDataManager.swift */; };
+		B4E78D3929452D1A00B35F46 /* HomeViewWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E78D3229452D1A00B35F46 /* HomeViewWireFrame.swift */; };
+		B4EDC5BE2946B73200039C63 /* PostDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EDC5B72946B73200039C63 /* PostDetailPresenter.swift */; };
+		B4EDC5BF2946B73200039C63 /* PostDetailLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EDC5B82946B73200039C63 /* PostDetailLocalDataManager.swift */; };
+		B4EDC5C02946B73200039C63 /* PostDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EDC5B92946B73200039C63 /* PostDetailProtocols.swift */; };
+		B4EDC5C12946B73200039C63 /* PostDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EDC5BA2946B73200039C63 /* PostDetailInteractor.swift */; };
+		B4EDC5C22946B73200039C63 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EDC5BB2946B73200039C63 /* PostDetailView.swift */; };
+		B4EDC5C32946B73200039C63 /* PostDetailRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EDC5BC2946B73200039C63 /* PostDetailRemoteDataManager.swift */; };
+		B4EDC5C42946B73200039C63 /* PostDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EDC5BD2946B73200039C63 /* PostDetailWireFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,13 +43,27 @@
 		B4024AA9293F98D9008C0DCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4024AAC293F98D9008C0DCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4024AAE293F98D9008C0DCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B48251B02940E74A0084ED2C /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		B48251B02940E74A0084ED2C /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		B48251B22940EB7B0084ED2C /* PostProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProtocol.swift; sourceTree = "<group>"; };
 		B48251B42940EC0A0084ED2C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B48251B62940ECED0084ED2C /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
 		B48251B92940EE7B0084ED2C /* PostInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostInteractor.swift; sourceTree = "<group>"; };
 		B48251BB2940F2F00084ED2C /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
 		B48251BD2940F3AA0084ED2C /* PostRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRouter.swift; sourceTree = "<group>"; };
+		B4E78D2C29452D1A00B35F46 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
+		B4E78D2D29452D1A00B35F46 /* HomeViewLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewLocalDataManager.swift; sourceTree = "<group>"; };
+		B4E78D2E29452D1A00B35F46 /* HomeViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocols.swift; sourceTree = "<group>"; };
+		B4E78D2F29452D1A00B35F46 /* HomeViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInteractor.swift; sourceTree = "<group>"; };
+		B4E78D3029452D1A00B35F46 /* HomeViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewView.swift; sourceTree = "<group>"; };
+		B4E78D3129452D1A00B35F46 /* HomeViewRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRemoteDataManager.swift; sourceTree = "<group>"; };
+		B4E78D3229452D1A00B35F46 /* HomeViewWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewWireFrame.swift; sourceTree = "<group>"; };
+		B4EDC5B72946B73200039C63 /* PostDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailPresenter.swift; sourceTree = "<group>"; };
+		B4EDC5B82946B73200039C63 /* PostDetailLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailLocalDataManager.swift; sourceTree = "<group>"; };
+		B4EDC5B92946B73200039C63 /* PostDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailProtocols.swift; sourceTree = "<group>"; };
+		B4EDC5BA2946B73200039C63 /* PostDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailInteractor.swift; sourceTree = "<group>"; };
+		B4EDC5BB2946B73200039C63 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		B4EDC5BC2946B73200039C63 /* PostDetailRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailRemoteDataManager.swift; sourceTree = "<group>"; };
+		B4EDC5BD2946B73200039C63 /* PostDetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailWireFrame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +98,8 @@
 		B4024A9F293F98D5008C0DCE /* Viper */ = {
 			isa = PBXGroup;
 			children = (
+				B48251BF294229310084ED2C /* HomeView */,
+				B490B4542943D41500185568 /* Post Detail */,
 				B4024AA0293F98D5008C0DCE /* AppDelegate.swift */,
 				B4024AA2293F98D5008C0DCE /* SceneDelegate.swift */,
 				B48251BB2940F2F00084ED2C /* ProgressIndicator.swift */,
@@ -85,10 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				B48251B82940EE560084ED2C /* Model */,
-				B48251B22940EB7B0084ED2C /* PostProtocol.swift */,
-				B48251B62940ECED0084ED2C /* PostPresenter.swift */,
-				B48251B02940E74A0084ED2C /* PostViewController.swift */,
+				B48251B02940E74A0084ED2C /* PostView.swift */,
 				B48251B92940EE7B0084ED2C /* PostInteractor.swift */,
+				B48251B62940ECED0084ED2C /* PostPresenter.swift */,
+				B48251B22940EB7B0084ED2C /* PostProtocol.swift */,
 				B48251BD2940F3AA0084ED2C /* PostRouter.swift */,
 			);
 			path = Post;
@@ -100,6 +130,34 @@
 				B48251B42940EC0A0084ED2C /* Post.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B48251BF294229310084ED2C /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				B4E78D2C29452D1A00B35F46 /* HomeViewPresenter.swift */,
+				B4E78D2D29452D1A00B35F46 /* HomeViewLocalDataManager.swift */,
+				B4E78D2E29452D1A00B35F46 /* HomeViewProtocols.swift */,
+				B4E78D2F29452D1A00B35F46 /* HomeViewInteractor.swift */,
+				B4E78D3029452D1A00B35F46 /* HomeViewView.swift */,
+				B4E78D3129452D1A00B35F46 /* HomeViewRemoteDataManager.swift */,
+				B4E78D3229452D1A00B35F46 /* HomeViewWireFrame.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		B490B4542943D41500185568 /* Post Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B4EDC5B72946B73200039C63 /* PostDetailPresenter.swift */,
+				B4EDC5B82946B73200039C63 /* PostDetailLocalDataManager.swift */,
+				B4EDC5B92946B73200039C63 /* PostDetailProtocols.swift */,
+				B4EDC5BA2946B73200039C63 /* PostDetailInteractor.swift */,
+				B4EDC5BB2946B73200039C63 /* PostDetailView.swift */,
+				B4EDC5BC2946B73200039C63 /* PostDetailRemoteDataManager.swift */,
+				B4EDC5BD2946B73200039C63 /* PostDetailWireFrame.swift */,
+			);
+			path = "Post Detail";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,11 +240,25 @@
 			files = (
 				B4024AA1293F98D5008C0DCE /* AppDelegate.swift in Sources */,
 				B48251BA2940EE7B0084ED2C /* PostInteractor.swift in Sources */,
+				B4EDC5BE2946B73200039C63 /* PostDetailPresenter.swift in Sources */,
+				B4E78D3729452D1A00B35F46 /* HomeViewView.swift in Sources */,
 				B48251B32940EB7B0084ED2C /* PostProtocol.swift in Sources */,
+				B4E78D3529452D1A00B35F46 /* HomeViewProtocols.swift in Sources */,
 				B48251B72940ECED0084ED2C /* PostPresenter.swift in Sources */,
+				B4EDC5C42946B73200039C63 /* PostDetailWireFrame.swift in Sources */,
+				B4E78D3329452D1A00B35F46 /* HomeViewPresenter.swift in Sources */,
 				B48251BC2940F2F00084ED2C /* ProgressIndicator.swift in Sources */,
+				B4E78D3929452D1A00B35F46 /* HomeViewWireFrame.swift in Sources */,
+				B4E78D3629452D1A00B35F46 /* HomeViewInteractor.swift in Sources */,
+				B4EDC5C02946B73200039C63 /* PostDetailProtocols.swift in Sources */,
 				B4024AA3293F98D5008C0DCE /* SceneDelegate.swift in Sources */,
-				B48251B12940E74B0084ED2C /* PostViewController.swift in Sources */,
+				B4EDC5BF2946B73200039C63 /* PostDetailLocalDataManager.swift in Sources */,
+				B48251B12940E74B0084ED2C /* PostView.swift in Sources */,
+				B4E78D3429452D1A00B35F46 /* HomeViewLocalDataManager.swift in Sources */,
+				B4EDC5C32946B73200039C63 /* PostDetailRemoteDataManager.swift in Sources */,
+				B4E78D3829452D1A00B35F46 /* HomeViewRemoteDataManager.swift in Sources */,
+				B4EDC5C12946B73200039C63 /* PostDetailInteractor.swift in Sources */,
+				B4EDC5C22946B73200039C63 /* PostDetailView.swift in Sources */,
 				B48251BE2940F3AA0084ED2C /* PostRouter.swift in Sources */,
 				B48251B52940EC0A0084ED2C /* Post.swift in Sources */,
 			);
@@ -327,6 +399,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZF7B3Q8YLK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Viper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -357,6 +430,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZF7B3Q8YLK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Viper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

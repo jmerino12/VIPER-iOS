@@ -9,8 +9,10 @@ import Foundation
 import UIKit
 
 class PostRouter: PresenterToRouterProtocol {
-    static func createModule() -> PostViewController {
-        let view = PostViewController()
+    
+    static func createModule() -> PostView {
+        
+        let view = PostView()
         let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = PostPresenter()
         let interactor: PresenterToInteractorProtocol = PostInteractor()
         let router:PresenterToRouterProtocol = PostRouter()
@@ -20,14 +22,13 @@ class PostRouter: PresenterToRouterProtocol {
         presenter.router = router
         presenter.interactor = interactor
         interactor.presenter = presenter
-        
         return view
         
     }
     
-    func pushToDetailScreen(navigationConroller: UINavigationController) {
-        let movieModue = PostRouter.createModule()
-        navigationConroller.pushViewController(movieModue, animated: true)
+    func pushToDetailScreen(navigationConroller: UINavigationController, post: Post) {
+        //let movieModue = PostDetailWireFrame.createPostDetailModule(post: post)
+        //navigationConroller.pushViewController(movieModue, animated: true)
     }
     
 }

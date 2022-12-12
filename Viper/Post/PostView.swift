@@ -30,7 +30,7 @@ func hideProgressIndicator(view:UIView){
     
 }
 
-class PostViewController: UIViewController {
+class PostView: UIViewController {
     
     var presentor:ViewToPresenterProtocol?
     var noticeArrayList:[Post] = [Post]()
@@ -38,7 +38,6 @@ class PostViewController: UIViewController {
     let myTable : UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
         table.translatesAutoresizingMaskIntoConstraints = false
-        table.isScrollEnabled = false
         table.backgroundColor = .white
         table.separatorStyle = UITableViewCell.SeparatorStyle.none
         return table
@@ -52,16 +51,20 @@ class PostViewController: UIViewController {
         myTable.delegate = self
         myTable.dataSource = self
         
-        myTable.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        myTable.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        myTable.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        myTable.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        let topContraint = NSLayoutConstraint(item: myTable, attribute: .top, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .top, multiplier: 1, constant: 0)
+        let bottomContraint = NSLayoutConstraint(item: myTable, attribute: .bottom, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .bottom, multiplier: 1, constant: 0)
+        let leadingContraint = NSLayoutConstraint(item: myTable, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 0)
+        let trailingContraint = NSLayoutConstraint(item: myTable, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: 0)
+        
+        NSLayoutConstraint.activate([topContraint, bottomContraint, leadingContraint, trailingContraint])
+        
         presentor?.startFetchingPost()
+
     }
     
 }
 
-extension PostViewController: PresenterToViewProtocol{
+extension PostView: PresenterToViewProtocol{
     func showError() {
         hideProgressIndicator(view: self.view)
         let alert = UIAlertController(title: "Alert", message: "Problem Fetching Post", preferredStyle: UIAlertController.Style.alert)
@@ -74,6 +77,7 @@ extension PostViewController: PresenterToViewProtocol{
         self.noticeArrayList = data
         DispatchQueue.main.async {
             self.myTable.reloadData()
+            self.myTable.layoutIfNeeded()
         }
         
     }
@@ -82,7 +86,7 @@ extension PostViewController: PresenterToViewProtocol{
 }
 
 
-extension PostViewController: UITableViewDataSource, UITableViewDelegate {
+extension PostView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return noticeArrayList.count
     }
@@ -97,6 +101,10 @@ extension PostViewController: UITableViewDataSource, UITableViewDelegate {
         }
         cell!.textLabel?.text = noticeArrayList[indexPath.row].title
         return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presentor?.showMovieController(navigationController: navigationController!, post: noticeArrayList[indexPath.row])
     }
     
     

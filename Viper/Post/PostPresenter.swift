@@ -10,23 +10,22 @@ import UIKit
 
 
 class PostPresenter: ViewToPresenterProtocol {
+    
     var view: PresenterToViewProtocol?
-    
     var interactor: PresenterToInteractorProtocol?
-    
     var router: PresenterToRouterProtocol?
     
     func startFetchingPost() {
         interactor?.fetchPost()
     }
     
-    func showMovieController(navigationController: UINavigationController) {
-        router?.pushToDetailScreen(navigationConroller: navigationController)
+    func showMovieController(navigationController: UINavigationController, post: Post) {
+        router?.pushToDetailScreen(navigationConroller: navigationController, post: post)
     }
     
 }
 
-extension PostPresenter: InteractorToPresenterProtocol {
+extension PostPresenter: InteractorToPresenterProtocol {    
     func postFetchedSuccess(data: [Post]) {
         view?.showPost(data: data)
     }

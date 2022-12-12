@@ -1,36 +1,37 @@
 //
-//  PostInteractor.swift
+//  HomeViewRemoteDataManager.swift
 //  Viper
 //
-//  Created by Jonathan Eduardo Meriño Bolívar - Ceiba Software on 7/12/22.
+//  Created by Jonathan Eduardo Meriño Bolívar - Ceiba Software on 10/12/22.
+//  
 //
 
 import Foundation
 import Alamofire
 
+enum PostError: Error {
+  case errorFetching
+}
 
-class PostInteractor: PresenterToInteractorProtocol {
-    var presenter: InteractorToPresenterProtocol?
+class HomeViewRemoteDataManager:HomeViewRemoteDataManagerInputProtocol {
     
-    func fetchPost() {
+    var remoteRequestHandler: HomeViewRemoteDataManagerOutputProtocol?
+    
+    func getPost()  {
         AF.request("https://jsonplaceholder.typicode.com/posts").responseDecodable(of: [Post].self) { response in
             if response.response?.statusCode == 200 {
                 if let data = response.data {
                     let post = self.parseJSON(data)
-                    self.presenter?.postFetchedSuccess(data: post!)
+                    self.remoteRequestHandler?.remoteDataManagerCallbackData(with: post!)
                 }
-            }else {
-                self.presenter?.postFetchFailed()
             }
         }
     }
-    
     
     func parseJSON(_ PostData: Data) -> [Post]? {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode([Post].self, from: PostData)
-            print(decodedData.count)
             return decodedData
         } catch  {
             print(error)
@@ -38,6 +39,5 @@ class PostInteractor: PresenterToInteractorProtocol {
         }
                 
     }
-    
     
 }

@@ -13,8 +13,9 @@ protocol ViewToPresenterProtocol: AnyObject {
     var view: PresenterToViewProtocol? {get set}
     var interactor: PresenterToInteractorProtocol? {get set}
     var router: PresenterToRouterProtocol? {get set}
+    
     func startFetchingPost()
-    func showMovieController(navigationController:UINavigationController)
+    func showMovieController(navigationController:UINavigationController, post: Post)
     
 }
 
@@ -24,8 +25,8 @@ protocol PresenterToViewProtocol: AnyObject {
 }
 
 protocol PresenterToRouterProtocol: AnyObject {
-    static func createModule()-> PostViewController
-    func pushToDetailScreen(navigationConroller:UINavigationController)
+    static func createModule()-> PostView
+    func pushToDetailScreen(navigationConroller:UINavigationController, post: Post)
 }
 
 protocol PresenterToInteractorProtocol: AnyObject {
